@@ -1,4 +1,4 @@
-"""todo URL Configuration
+"""my_first_project URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from tasks import views
+from my_first_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.index,name='index')
+    path('',views.index),
+    path('Suzanne/',views.Suzanne),
 ]
